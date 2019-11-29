@@ -15,7 +15,6 @@
             <router-link active-class="active" tag="li" :to="'/user/'+item.sender_id">
               <span class="username username1">{{item.sender.username}}</span>
             </router-link>
-           
             <router-link active-class="active" tag="li" :to="'/album/'+item.album.id">
             <span class="photoname photoname1">{{item.album.name}}</span>
              </router-link>
