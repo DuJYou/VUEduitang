@@ -1,0 +1,26 @@
+<header class="header dark-bg">
+ 
+</header>
+<!--header end-->
+
+<!--sidebar start-->
+<aside>
+
+</aside>
+<!--sidebar end-->
+
+<!--main content start-->
+<section id="main-content">
+  <section class="wrapper">
+    <div class="row">
+      <div class="col-lg-12" id="title">
+        
+      </div>
+    </div>
+    <div id="indexMain" class="indexMain">
+
+    </div>
+    <!-- page end-->
+  </section>
+</section>
+<!--main content end-->

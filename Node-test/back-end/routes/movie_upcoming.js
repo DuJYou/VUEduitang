@@ -1,0 +1,13 @@
+var express = require('express')
+var router = express.Router()
+let movieUpcoming = require('../controllers/movie_upcoming')
+let uploadMiddleware =require('../middlewares/upload')
+router.route('/')
+    .get(movieUpcoming.findAll)
+    .post(uploadMiddleware,movieUpcoming.save)
+    // .patch(uploadMiddleware,movieUpcoming.updata)
+    .delete(movieUpcoming.remove)
+router.get('/findOne', movieUpcoming.findOne)
+router.post('/search', movieUpcoming.search)
+router.post('/updata',uploadMiddleware,movieUpcoming.updata)
+module.exports = router

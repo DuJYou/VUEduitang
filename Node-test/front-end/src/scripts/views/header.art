@@ -1,0 +1,53 @@
+<div class="toggle-nav">
+    <div class="icon-reorder tooltips" data-original-title="Toggle Navigation" data-placement="bottom"><i
+        class="icon_menu"></i></div>
+  </div>
+  <!--logo start-->
+  <a href="index.html" class="logo">淘票票<span class="lite">后台管理系统</span></a>
+  <!--logo end-->
+
+  <div class="top-nav notification-row">
+    <!-- notificatoin dropdown start-->
+    <ul class="nav pull-right top-menu">
+
+  
+      <li class="dropdown" id="login">
+        <a data-toggle="dropdown" class="dropdown-toggle" href="#">
+          <!-- <span class="profile-ava">
+            <img alt="" src="/assets/images/avatar1_small.jpg">
+          </span> -->
+
+          <span class="username"></span>
+
+          <b class="caret"></b>
+        </a>
+        <ul class="dropdown-menu extended logout">
+          <div class="log-arrow-up"></div>
+          <li class="eborder-top">
+            <a href="#"><i class="icon_profile"></i> 个人信息</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon_mail_alt"></i>我的邮箱</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon_clock_alt"></i> 时间线</a>
+          </li>
+          <li>
+            <a href="#"><i class="icon_chat_alt"></i> 闲聊</a>
+          </li>
+          {{if !isSignin}}
+          <li>
+            <a id="loginin"><i class="icon_key_alt"></i>登录</a>
+          </li>
+          {{else}}
+          <li>
+            <a id="loginout"><i class="icon_key_alt"></i>注销</a>
+          </li>
+          {{/if}}
+      
+        </ul>
+      </li>
+      <!-- user login dropdown end -->
+    </ul>
+    <!-- notificatoin dropdown end-->
+  </div>

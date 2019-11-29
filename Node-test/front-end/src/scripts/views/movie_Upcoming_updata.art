@@ -1,0 +1,92 @@
+<div class="col-lg-6">
+    <section class="panel">
+        <header class="panel-heading">
+            <trans oldtip=" Basic Forms " newtip="修改电影信息">修改电影信息</trans>
+        </header>
+        <div class="panel-body">
+            <form  role="form"
+            method="post"
+            id="movie-form"
+            action="/api/movieUpcoming" 
+            enctype="multipart/form-data"><div class="form-group">
+                    <label for="exampleInputEmail1">
+                        <trans oldtip="MovieId" newtip="电影ID">电影ID</trans>
+                    </label>
+                    <input type="text" value="{{item.movieId}}" class="form-control" id="MovieId" name="movieId"
+                        placeholder="请输入电影ID">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputFile">
+                        <trans oldtip="File input" id="MovieImg" name="movieImg" newtip="图片上传">图片</trans>
+                    </label>
+                    <div><img style="width: 80px;height: 80px;" src="http://10.9.49.167:3000/uploads/{{item.movieImg}}"
+                            alt=""></div>
+                    <input type="file" value="{{item.movieId}}" id="MovieImg exampleInputFile" name="movieImg">
+                  
+                </div>
+
+                <div class="form-group">
+                    <label for="exampleInputEmail1">
+                        <trans oldtip="MovieName" newtip="电影名称">电影名称</trans>
+                    </label>
+                    <input type="text" value="{{item.movieName}}" class="form-control" id="MovieName" name="movieName"
+                        placeholder="请输入电影名称">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieSynopsis" newtip="简介">简介</trans>
+                    </label>
+                    <input type="text" value="{{item.movieSynopsis}}" class="form-control" id="MovieSynopsis"
+                        name="movieSynopsis" placeholder="请输入电影简介">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieScore" newtip="评分">评分</trans>
+                    </label>
+                    <input type="text" value="{{item.movieScore}}" class="form-control" id="MovieScore"
+                        name="movieScore" placeholder="请输入评分">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieWatch" newtip="观看人数">观看人数</trans>
+                    </label>
+                    <input type="text" value="{{item.movieWatch}}" class="form-control" id="MovieWatch"
+                        name="movieWatch" placeholder="请输入观看人数">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieStra" newtip="主演">主演</trans>
+                    </label>
+                    <input type="text" value="{{item.movieStra}}" class="form-control" id="MovieStra" name="movieStra"
+                        placeholder="请输入主演">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieTime" newtip="上映时间">上映时间</trans>
+                    </label>
+                    <input type="text" value="{{item.movieTime}}" class="form-control" id="MovieTime" name="movieTime"
+                        placeholder="请输入上映时间">
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">
+                        <trans oldtip="MovieNumber" newtip="场次">场次</trans>
+                    </label>
+                    <input type="text" value="{{item.movieNumber}}" class="form-control" id="MovieNumber"
+                        name="movieNumber" placeholder="请输入场次">
+                </div>
+
+
+
+                <button class="btn btn-default" id="moviedit-back" type="button">
+                    <trans oldtip="Cancel" newtip="取消">返回</trans>
+                </button>
+                <button type="Submit" id="moviedit-submit" class="btn btn-primary pull-right">
+                    <trans oldtip="Submit" newtip="提交">提交</trans>
+                </button>
+                <input type="hidden" name="id" value={{item._id}}>
+                <input type="hidden" name="tempMovieImg" value={{item.movieImg}}>
+            </form>
+
+        </div>
+    </section>
+</div>
